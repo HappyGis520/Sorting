@@ -1,0 +1,77 @@
+# Visual Studio 核心排除项
+**/[Bb]in/
+**/[Oo]bj/
+**/[Ll]og/
+**/[Ll]ogs/
+**/*.user
+**/*.suo
+**/*.userprefs
+**/*.cache
+.vs/
+_ReSharper.*/
+
+# 编译输出
+!Lib/*.dll
+!Dreame.DHCamera/Lib/*.dll
+**/*.dll
+**/*.exe
+**/*.pdb
+**/*.xml
+**/*.cache
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+**/build/
+**/bld/
+*.ilk
+*.exp
+*.lib
+*.pgd
+*.app
+
+# NuGet包管理
+**/[Pp]ackages/
+**/packages.lock.json
+.nuget/
+*.nupkg
+NuGet.exe
+
+# 测试相关排除项
+TestResult.xml
+*.coverage
+*.testlog
+**/TestResults/
+
+# IDE特定文件
+.idea/
+*.sln.iml
+*.csproj.user
+.vscode/
+*.code-workspace
+
+# 临时文件
+*.swp
+*.swo
+*~
+*.patch
+*.tmp
+*.TMP
+
+# 项目特定文件
+appsettings.Development.json
+secrets.json
+*.pubxml
+*.publishproj
+
+# 本地调试文件
+launchSettings.json
+
+# 日志文件
+*.log
+*.log.*
+
+# 前端依赖 (如果项目包含前端)
+node_modules/
+**/wwwroot/lib/
+dist/
