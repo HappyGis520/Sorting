@@ -5,7 +5,6 @@
  * *******************************************************************/
 using GalaSoft.MvvmLight.CommandWpf;
 using GalaSoft.MvvmLight.Messaging;
-using JLeap.Common;
 using Jlib;
 using Jlib.Controls;
 using Sorting.Interface;
@@ -1073,7 +1072,7 @@ namespace Sorting.Proxy
             while (!_CancelCreateSupplyTaskTag && result == null && queryCount < maxQuery)//如果没有取消查询
             {
                 var param = taskModel.ToRequestTaskParam2();
-                SortingLogger.Logger.Debug($"工位[{taskModel.StationId}]起起获取任务请求，参数[{param.ToJson()}]");
+                SortingLogger.Logger.Debug($"工位[{taskModel.StationId}]起起获取任务请求，参数[{param.ToJsonString()}]");
                 result = await WCSClient.RequetSupplyTask(param);
                 if (result == null)
                     Thread.Sleep(1000);
