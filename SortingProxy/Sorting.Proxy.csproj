@@ -52,6 +52,10 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="RawInput.Sharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\scanner\lib\RawInput.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="Sorting.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Sorting.Interface.dll</HintPath>
@@ -70,7 +74,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarCodeScannerDevice.cs" />
+    <Compile Include="BarCodeScannerMonitor.cs" />
+    <Compile Include="EnumDeviceType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawInputDeviceExtensions.cs" />
     <Compile Include="SortingViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
